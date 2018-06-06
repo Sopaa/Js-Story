@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Le voyant</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/story.js" charset="UTF-8"></script>
+		<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+		<script>
+			jQuery(function($){
+				$('#story').story();
+				var restart = function () {
+					$('#story').story('restart');
+				};
+				$('#restart').click(restart);
+				$('#restart').keypress(function (e) {
+					if (e.which !== 13) return;
+					restart();
+				});
+			});
+		</script>
+		<link rel="stylesheet" href="assets/css/style.css"/>
+	</head>
+	<body>
+		<!-- en musique je voulais mettre boshka bass, mais ca correspondait pas vraiment 😅 -->
+        <header class="header">
+            <h1 class="header-title">Le Voyant</h1>
+            <a class="story-header-link restart" id="restart" tabindex="0">Restart</a>
+		</header>
+		
+		<div id="story-container">
+			<div id="story-header">
+				
+			</div>
+			<div id="story">
+			</div>
+		</div>
+		<object style="visibility: hidden">
+			<param name="autostart" value="true">
+			<param name="src" value="sound.mp3">
+			<param name="autoplay" value="true">
+			<param name="loop" value="true">
+			<embed src="assets/music/attente.mp3" autoplay="true" autostart="True" type="audio/mp3" loop="true"/>
+		</object>
+	</body>
+</html>

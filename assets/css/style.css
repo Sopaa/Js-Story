@@ -1,0 +1,60 @@
+body {
+    color: white;
+    font-family: 'Jua', sans-serif;
+    background-image: url("../img/bouboule.jpg");
+}
+a.story-link
+{
+    text-decoration: none;
+    color: #FFBD33;
+    cursor: pointer;
+}
+a.story-link.disabled
+{
+    text-decoration: inherit;
+    color: inherit !important;
+    cursor: inherit;
+}
+a.story-header-link
+{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 2.5px;
+}
+div#story-container
+{
+    background-color: rgba(192,192,192,0.3);
+    box-shadow: 0px 0px 44px 0px rgba(192,192,192,0.3);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid white;
+    padding: 0 10px;
+}
+div#story-header
+{
+    font-size: 14px;
+    text-align: right;
+}
+div#story
+{
+    font-size: 18px;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 16px; margin-bottom: 16px;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
