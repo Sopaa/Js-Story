@@ -192,7 +192,6 @@ var story = {};
             story.ui.write(master.text);
         }
         story.story.run(story.story.section);
-        // The JS might have changed which section we're in
         if (story.get('_section') == section) {
             story.set('_turncount', 0);
             story.ui.write(story.story.section.text);
