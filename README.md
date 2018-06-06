@@ -1,7 +1,9 @@
-# I should complete readme ...
+# Le voyant
 
-## but
+## Le concept
 
-## I'm
+Et bien c'est très simple, vous consultez un voyant qui vous dit à quelle star vous correspondez le mieux.
 
-## tired
+## kiafésa?
+
+Dorian Guegen et Pierre Bourgeois.
